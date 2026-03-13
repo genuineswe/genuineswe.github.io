@@ -372,10 +372,10 @@ Jul 2020 - Apr 2021 · 10 blnJul 2020 hingga Apr 2021 · 10 bln
 Repository:
 1. React js ID
 2. Duckduckgo
-3. https://tailwindcomponents.com/u/gaweki
+3. https://tailwindcomponents.com/u/genuineswe
 4. Vest - https://github.com/ealush/vest/issues/310
 5. Hospital Run - Fix label - https://github.com/HospitalRun/hospitalrun-frontend/issues/2372, https://github.com/HospitalRun/hospitalrun-frontend/issues/2295
-6. My personal projects : https://github.com/gawekiRepository: 1. React js ID 2. Duckduckgo 3. https://tailwindcomponents.com/u/gaweki 4. Vest - https://github.com/ealush/vest/issues/310 5. Hospital Run - Fix label - https://github.com/HospitalRun/hospitalrun-frontend/issues/2372, https://github.com/HospitalRun/hospitalrun-frontend/issues/2295 6. My personal projects : https://github.com/gaweki…lihat lebih banyak
+6. My personal projects : https://github.com/genuinesweRepository: 1. React js ID 2. Duckduckgo 3. https://tailwindcomponents.com/u/genuineswe 4. Vest - https://github.com/ealush/vest/issues/310 5. Hospital Run - Fix label - https://github.com/HospitalRun/hospitalrun-frontend/issues/2372, https://github.com/HospitalRun/hospitalrun-frontend/issues/2295 6. My personal projects : https://github.com/genuineswe…lihat lebih banyak
 
 Tampilkan semua 11 pengalaman
 PendidikanPendidikan

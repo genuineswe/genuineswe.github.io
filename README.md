@@ -36,7 +36,7 @@ Jika menggunakan custom domain `gaweki.dev`:
 3. Update DNS records:
    ```
    A record: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
-   CNAME: www.gaweki.dev → gaweki.github.io
+   CNAME: www.gaweki.dev → genuineswe.github.io
    ```
 
 ## 🛠️ Development

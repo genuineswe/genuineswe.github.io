@@ -64,8 +64,8 @@ function ContactPanel({ isOpen, closeContact, openContact }) {
     },
     {
       name: 'GitHub',
-      value: '@gaweki',
-      href: 'https://github.com/gaweki',
+      value: '@genuineswe',
+      href: 'https://github.com/genuineswe',
       icon: '💻'
     }
   ];
