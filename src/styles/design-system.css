@@ -157,3 +157,124 @@ pre {
   background-color: var(--color-accent-cyan);
   color: var(--color-bg);
 }
+/* Blog Content Typography (Custom fallback for typography plugin) */
+.blog-content {
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.blog-content p {
+  margin-bottom: 1.5rem;
+}
+
+.blog-content h2 {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-bg-tertiary);
+}
+
+.blog-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content ul, .blog-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.blog-content ul {
+  list-style-type: disc;
+}
+
+.blog-content ol {
+  list-style-type: decimal;
+}
+
+.blog-content li {
+  margin-bottom: 0.5rem;
+}
+
+.blog-content blockquote {
+  border-left: 4px solid var(--color-accent-cyan);
+  background-color: rgba(51, 65, 85, 0.2);
+  padding: 1rem 1.5rem;
+  font-style: italic;
+  margin: 2rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  border: 1px solid var(--color-bg-tertiary);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: table;
+}
+
+.blog-content thead {
+  background-color: rgba(51, 65, 85, 0.3);
+}
+
+.blog-content th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  color: var(--color-accent-cyan);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--color-bg-tertiary);
+}
+
+.blog-content td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+.blog-content tr:last-child td {
+  border-bottom: none;
+}
+
+.blog-content code {
+  color: var(--color-accent-cyan);
+  background-color: rgba(51, 65, 85, 0.4);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+}
+
+.blog-content pre {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #1a1b26;
+  border: 1px solid var(--color-bg-tertiary);
+  border-radius: 0.75rem;
+}
+
+.blog-content pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.blog-content img {
+  border-radius: 0.75rem;
+  margin: 2.5rem auto;
+  display: block;
+  box-shadow: var(--shadow-soft);
+}
+
+.blog-content hr {
+  border: 0;
+  border-top: 1px solid var(--color-bg-tertiary);
+  margin: 3rem 0;
+}

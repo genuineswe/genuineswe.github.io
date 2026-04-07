@@ -50,6 +50,15 @@ export default function Header() {
                 Projects
               </Link>
             </li>
+            <li>
+              <Link 
+                to="/blog" 
+                className="hover:text-accent-cyan transition-colors focus:outline-2 focus:outline-accent-cyan"
+                activeClassName="text-accent-cyan"
+              >
+                Blog
+              </Link>
+            </li>
           </ul>
 
           {/* Mobile Menu Button */}
@@ -102,6 +111,15 @@ export default function Header() {
                 activeClassName="text-accent-cyan"
               >
                 Projects
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/blog" 
+                className="block py-2 hover:text-accent-cyan transition-colors"
+                activeClassName="text-accent-cyan"
+              >
+                Blog
               </Link>
             </li>
           </ul>
