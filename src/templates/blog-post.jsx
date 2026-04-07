@@ -43,15 +43,11 @@ const BlogPostTemplate = ({
                 {post.frontmatter.title}
               </h1>
 
-              {/* Author Meta Section */}
+              {/* Post Meta Section */}
               <div className="flex items-center space-x-4 mb-8">
-                {/* <div className="w-12 h-12 rounded-full bg-accent-cyan/20 border border-accent-cyan flex items-center justify-center text-accent-cyan font-bold text-lg">
-                  {author.split(' ').map(n => n[0]).join('')}
-                </div> */}
                 <div>
-                  {/* <p className="text-text-primary font-bold">{author}</p> */}
-                  <p className="text-text-muted text-sm font-mono">
-                    {post.frontmatter.date} • {post.timeToRead} min read
+                  <p className="text-text-muted text-sm font-mono italic">
+                    Published on {post.frontmatter.date} • {post.timeToRead} min read
                   </p>
                 </div>
               </div>

@@ -6,12 +6,14 @@ import SEO from "../components/SEO"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const author = data.site.siteMetadata?.author || "Andrel Karunia Sitanggang"
   const posts = data.allMarkdownRemark.nodes
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Blog" description="Kumpulan tulisan dan artikel dari Andrel Karunia Sitanggang" />
+      <SEO 
+        title="Blog" 
+        description="A collection of technical articles, tutorials, and thoughts on software engineering by Andrel Karunia Sitanggang." 
+      />
       
       <div className="bg-dark-bg min-h-screen pt-24 pb-20 px-4">
         <div className="container mx-auto max-w-4xl">
@@ -20,7 +22,7 @@ const BlogIndex = ({ data, location }) => {
               Blog
             </h1>
             <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-              Berbagi pengalaman, tutorial, dan pemikiran seputar pengembangan perangkat lunak.
+              Sharing experiences, tutorials, and insights on modern software development.
             </p>
           </header>
 
@@ -37,44 +39,46 @@ const BlogIndex = ({ data, location }) => {
                   itemScope
                   itemType="http://schema.org/Article"
                 >
-                  <div className="p-6 md:p-8">
-                    <div className="flex items-center space-x-3 mb-4">
-                      <div className="w-8 h-8 rounded-full bg-accent-cyan/20 border border-accent-cyan flex items-center justify-center text-accent-cyan font-bold text-xs">
-                        {author.split(' ').map(n => n[0]).join('')}
-                      </div>
-                      <div className="flex flex-col">
-                        <span className="text-text-primary font-bold text-sm leading-none mb-1">{author}</span>
-                        <span className="text-text-muted text-xs font-mono">{post.frontmatter.date}</span>
-                      </div>
+                  <div className="p-6 md:p-10">
+                    <div className="mb-4">
+                      <span className="text-text-muted text-sm font-mono tracking-wider uppercase">
+                        {post.frontmatter.date}
+                      </span>
                     </div>
 
-                    <div className="md:pl-11">
-                      <h2 className="text-2xl md:text-4xl font-extrabold mb-3 group-hover:text-accent-cyan transition-colors leading-tight">
-                        <Link to={post.fields.slug} itemProp="url">
-                          <span itemProp="headline">{title}</span>
-                        </Link>
-                      </h2>
+                    <h2 className="text-2xl md:text-4xl font-extrabold mb-4 group-hover:text-accent-cyan transition-colors leading-tight">
+                      <Link to={post.fields.slug} itemProp="url">
+                        <span itemProp="headline">{title}</span>
+                      </Link>
+                    </h2>
 
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: post.frontmatter.description || post.excerpt,
-                        }}
-                        className="text-text-secondary text-lg mb-6 line-clamp-3"
-                        itemProp="description"
-                      />
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: post.frontmatter.description || post.excerpt,
+                      }}
+                      className="text-text-secondary text-lg mb-8 line-clamp-3 leading-relaxed"
+                      itemProp="description"
+                    />
 
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center space-x-4 text-sm text-text-muted font-mono">
-                          <span>{post.timeToRead} min read</span>
-                        </div>
-                        
-                        <Link 
-                          to={post.fields.slug} 
-                          className="px-4 py-2 rounded-lg bg-dark-bg-tertiary/30 text-text-secondary font-medium hover:bg-accent-cyan hover:text-dark-bg transition-all"
-                        >
-                          Read Article
-                        </Link>
+                    <div className="flex items-center justify-between pt-4 border-t border-dark-bg-tertiary/50">
+                      <div className="flex items-center space-x-4 text-sm text-text-muted font-mono">
+                        <span className="flex items-center">
+                          <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          {post.timeToRead} min read
+                        </span>
                       </div>
+                      
+                      <Link 
+                        to={post.fields.slug} 
+                        className="inline-flex items-center text-accent-cyan font-bold hover:text-accent-blue transition-colors group-hover:translate-x-1 transition-transform"
+                      >
+                        Read Post
+                        <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </Link>
                     </div>
                   </div>
                 </article>
@@ -94,7 +98,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
       }
     }
     allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
@@ -105,7 +108,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMM DD, YYYY")
+          date(formatString: "MMMM DD, YYYY")
           title
           description
         }
