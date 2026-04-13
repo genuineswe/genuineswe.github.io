@@ -144,6 +144,19 @@ git checkout main
 
 echo "Deployment complete!"
 ```
+or
+```
+npm run build&&
+git checkout --orphan gh-pages&&
+git rm -rf .&&
+cp -r public/* .&&
+git add .&&
+git commit -m "Deploy to GitHub Pages"&&
+git push origin gh-pages --force&&
+git checkout master&&
+git branch -D gh-pages&&
+npm i
+```
 
 ## � Project Structure
 
