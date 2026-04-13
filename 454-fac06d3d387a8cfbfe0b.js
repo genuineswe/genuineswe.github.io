@@ -1,0 +1,1 @@
+(self.webpackChunkandrel_karunia_sitanggang_portfolio=self.webpackChunkandrel_karunia_sitanggang_portfolio||[]).push([[454],{6454:function(){}}]);
