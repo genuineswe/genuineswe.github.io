@@ -113,6 +113,9 @@ Gunakan `--force` karena ini akan menimpa branch `gh-pages` yang sudah ada.
 git checkout master
 # atau
 git checkout main
+
+git branch -D gh-pages
+
 ```
 
 ### Catatan Penting:

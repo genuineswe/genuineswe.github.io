@@ -1,8 +1,7 @@
 ---
-title: Why I Finally Put My Frontend in a Container
-published: false
-description: Moving past the 'install instructions' hell and embracing Docker.
-tags: webdev, docker, productivity, frontend
+title: "Why I Finally Put My Frontend in a Container"
+date: "2026-04-07"
+description: "Moving past the 'install instructions' hell and embracing Docker."
 ---
 
 Last month, a new developer joined our team. 
