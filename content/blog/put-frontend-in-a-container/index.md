@@ -1,6 +1,6 @@
 ---
 title: "Why I Finally Put My Frontend in a Container"
-date: "2026-04-07"
+date: "2026-04-14"
 description: "Moving past the 'install instructions' hell and embracing Docker."
 ---
 
